@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error 404 - Not Found</title>
+  <style>
+    body {
+      background: url('assets/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Cinzel', serif;
+      color: #5b3924;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin: 20px 0 10px 0;
+      text-shadow: 2px 2px #e0c097;
+    }
+
+    p {
+      font-size: 28px;
+      margin: 10px 0 30px 0;
+      color: #7b5e45;
+    }
+
+    .btn-home {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #e0c097;
+      color: #5b3924;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-home:hover {
+      background-color: #d4b07a;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+  <script>
+    // 3 seconds (3000 milliseconds) delay before showing the 404 content
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        document.body.style.display = 'flex';
+      }, 3000);
+    });
+  </script>
+
+</head>
+
+<body style="display: none;"> <!-- initially hidden -->
+
+  <h1>Error 404 - Not Found</h1>
+  <p>You are closer to the answer...</p>
+
+  <a class="btn-home" href="index.html">Return to Main Page</a>
+
+</body>
+</html>

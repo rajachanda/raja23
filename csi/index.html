@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Nile Chronicle - 1324 BCE Edition</title>
+    <style>
+        body { 
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+                        url('https://t4.ftcdn.net/jpg/02/77/27/91/360_F_277279156_3kiEemL1mqy1tRsGtI5W1HHN6VPhI91B.jpg');
+            background-size: cover;
+            font-family: 'Papyrus', fantasy;
+            color: #3d2b1f;
+            margin: 2rem;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px double #8B4513;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.9);
+            padding: 1rem;
+        }
+        .columns {
+            column-count: 3;
+            column-gap: 2rem;
+            text-align: justify;
+            background: rgba(255,255,255,0.85);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .sphinx-img {
+            float: left;
+            margin: 0 1rem 1rem 0;
+            border: 3px groove #8B4513;
+            shape-outside: circle(50%);
+            max-width: 250px;
+        }
+        .hieroglyph {
+            width: 150px;
+            float: right;
+            margin: 0 0 1rem 1rem;
+            opacity: 0.9;
+            shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        }
+        .advert {
+            background: #f5e6d3;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+            break-inside: avoid;
+        }
+        a {
+            color: #a52a2a;
+            text-decoration: underline wavy;
+            font-weight: bold;
+        }
+        .secret {
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                #f5e6d3 10px,
+                #f5e6d3 20px
+            );
+            padding: 0.5rem;
+            margin: 2rem 0;
+        }
+        .pharaoh-alert {
+            border: 2px solid #8B4513;
+            padding: 1rem;
+            margin: 1rem 0;
+            background: rgba(255,228,181,0.3);
+        }
+        .map-section {
+            text-align: center;
+            break-inside: avoid;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: rgba(245, 222, 179, 0.3);
+            border: 1px dashed #8B4513;
+        }
+        .sidebar {
+            border-left: 2px solid #8B4513;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            break-inside: avoid;
+        }
+        .highlight {
+            background-color: rgba(255, 215, 0, 0.2);
+            padding: 0.2rem;
+        }
+        .image-placeholder {
+            height: 200px;
+            background-color: #d9c7b8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            font-style: italic;
+            border: 1px solid #8B4513;
+        }
+        .weather {
+            background: rgba(173, 216, 230, 0.3);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            break-inside: avoid;
+        }
+        .quote {
+            font-style: italic;
+            border-left: 3px solid #8B4513;
+            padding-left: 1rem;
+            margin-left: 1rem;
+        }
+        .footnote {
+            font-size: 0.8em;
+            border-top: 1px solid #8B4513;
+            margin-top: 2rem;
+            padding-top: 1rem;
+        }
+        .clue-container {
+            font-size: 0.85em;
+            color: #5d4b3f;
+        }
+        .hidden {
+            color: rgba(61, 43, 31, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>𓋴𓍿𓂋𓄿𓏭𓎼𓇌𓏏 THE NILE CHRONICLE</h1>
+        <h3>All the News That's Fit to Carve in Stone</h3>
+        <p>Sekhmet Month, Day 7, Year 6 of Pharaoh Tutankhmunseti IV | Price: 2 copper deben</p>
+    </div>
+
+    <div class="columns">
+        <div class="pharaoh-alert" style="position: relative;">
+            <h2 style="text-align: center;">𓋞 ROYAL DECREE 𓋞</h2>
+            
+                <div style="overflow: auto;">
+                    <div style="display: flex; justify-content: center;">
+                        ">
+                    <img src="assets/w2.png" alt="The seventh shift reveals all (secret_code: HELIO_PRIME)" 
+                         width="220" height="220" style="display: block; margin-bottom:1rem;">
+              
+                    <p style="margin-top: 1rem; margin-left: 1rem;">By the divine decree of Pharaoh Tutankhmunseti IV — custodian of Ma’at, dispenser of justice, blessed by Ra’s radiance, favored by Amun’s strength, lord of Egypt, whose throne unites the Two Lands in harmony:</p>
+                    </div>
+                    <ul style="padding-left: 0; margin: 0; list-style-position: inside;">                        <li>All sundials must be recalibrated to <a href="error.html">Sphinx Standard Time</a> by the next full moon</li>
+                        <li>Unauthorized pyramid construction <a href="error.html">tax penalties</a> doubled to 40 grain measures</li>
+                        <li>New <a href="error.html">Nile water rationing</a> laws in effect during low season</li>
+                        <li>All citizens must attend the <a href="error.html">Festival of Hathor</a> next week</li>
+                    </ul>
+                    <p>Failure to comply will result in trial before the <span class="highlight">Divine Council of Seven</span>.</p>
+                </div>
+        </div>
+
+        <!-- Main Headline Article -->
+        <h2>Pharaoh's New Groove: Royal Architect Fired Over Pyramid Angles</h2>
+        <p>In a stunning development at the Court of Rameses the Persistent, Chief Architect Amenhotep the Triangular has been dismissed following allegations that his <a href="error.html">pyramid angles</a> were "mathematically questionable". Sources claim the Pharaoh complained the structure "lacked curb appeal" compared to neighboring <a href="error.html">Nubian ziggurats</a>.</p>
+
+        <img src="assets/w2.png" class="hieroglyph" 
+             alt="Decode me: The secret is in the seven thing">
+
+        <p>The scandal deepens as newly discovered <a href="error.html">papyrus scrolls</a> reveal the architect had been consulting with a <a href="error.html">time-traveling mathematician</a> from the distant future. "He kept babbling about something called 'Pythagoras' and 'interdimensional geometry'," stated one slave worker who asked to remain anonymous.</p>
+        
+        <p>"I served the royal family for twenty-seven years," Amenhotep lamented while packing his measuring reeds. "But apparently my 52-degree angle was 'too derivative' of Khufu's work, and the Pharaoh wanted something more 'avant-garde' for his eternal resting place."</p>
+        
+        <p>Court insiders report that Tutankhmunseti IV became enraged after discovering that the eastern face of his pyramid would only catch the sunrise during summer months. "What am I supposed to do in the afterlife during winter?" the Pharaoh reportedly shouted. "Freeze in the dark like a common crocodile hunter?"</p>
+        
+        <p>The new royal architect, Nebamun the Oblique, has proposed a controversial octagonal design that he claims will "revolutionize death architecture for generations to come." Critics argue that the souls of the dead might get confused trying to ascend a non-traditional structure.</p>
+        
+        <p>Meanwhile, Amenhotep has found new employment designing luxury cat tombs for the High Priestess of Bastet.</p>
+
+        <!-- Advertisement 1 -->
+        <div class="advert">
+            🏺 <strong>LIMITED OFFER!</strong> Book your Afterlife Insurance now! 
+            Get FREE canopic jars with every premium policy! Our new "Eternal Package" includes free mummification for your favorite pet!
+            <br><a href="error.html">Click here for immortality!</a>
+        </div>
+
+        <!-- Mystery Tablet Section -->
+        <h3>Mysterious Tablet Discovered Beneath Sphinx Paw</h3>
+        <p>Archaeologists made a startling discovery yesterday when they unearthed a <a href="error.html">seven-sided crystal tablet</a> beneath the Great Sphinx's left paw. The artifact bears strange markings resembling both ancient hieroglyphs and symbols never before recorded in Egyptian history.</p>
+
+        <img src="assets/w4.png" class="hieroglyph" 
+             alt="How did the secret code come from? Keep those spread speeds!" 
+             title="Rot13 clue">
+
+        <p>"This could rewrite everything we know about ancient civilization," said Dr. Zoser Jones of the Cairo Institute. "The tablet appears to contain mathematical formulas that shouldn't exist for another three thousand years."</p>
+        
+        <p>The discovery team, led by Ankhesenamun the Meticulous, has been working at the site for seven years. "At first we thought it was just another trinket left by treasure hunters," she explained, "but when moonlight hit the surface, hidden glyphs began to glow with an unearthly blue light."</p>
+        
+        <p>However, controversy erupted when the <a href="error.html">High Priest of Ra</a> declared the tablet "clearly fake news" and demanded its immediate surrender to temple authorities.</p>
+        
+        <p>"Any object found in sacred ground belongs to the gods, not to nosy scholars," the High Priest announced during yesterday's sunrise ceremony. "Besides, everyone knows the Sphinx guards secrets meant only for those with divine permission."</p>
+        
+        <p>When asked about the tablet's strange symbols, Dr. Jones became visibly excited. "There appears to be a recurring pattern of seven stars arranged in the constellation we now call the Great Bear. The ancients believed this formation contained the map to the afterlife, but this tablet suggests something far more significant – possibly <span class="highlight">a mathematical key to understanding time itself</span>."</p>
+        
+        <p>The royal court has ordered the tablet moved to the Temple of Thoth for further study, where it will be examined by the kingdom's most trusted astronomers and mathematicians.</p>
+
+        <!-- New Section: Weather Report -->
+        <div class="weather">
+            <h3>𓇽 NILE FORECAST 𓇽</h3>
+            <p><strong>Today:</strong> Hot and dry, as it has been for the last 3,000 years</p>
+            <p><strong>Tomorrow:</strong> Continued hot, possible locust shower near Delta region</p>
+            <p><strong>Flooding Season:</strong> Still 77 days away according to royal astronomers</p>
+            <p><strong>Sun God Ra's Mood:</strong> Particularly scorching and vindictive</p>
+        </div>
+
+        <!-- Advertisement 2 -->
+        <div class="advert">
+            🐪 <strong>CAMELOCITY DELIVERY!</strong> Your ostrich feathers in 30 days or less! 
+            Now serving <a href="error.html">Alexandria to Babylon</a> route! New camel-powered rush service available for an additional 3 silver rings.
+        </div>
+
+        <!-- Economic News Section -->
+        <h3>𓆓 Nile Trade Update 𓆓</h3>
+        <p>The biannual merchant caravan from Nubia arrived three days ahead of schedule, causing market disruption as traders scrambled to adjust prices. Foreign goods have flooded the royal bazaar, leading to heated debates among the merchant guild.</p>
+        
+        <p>Current commodity prices:</p>
+        <ul>
+            <li>1 sack of wheat = 3 <a href="error.html">copper ingots</a> (up 20% since last month)</li>
+            <li>1 lapis lazuli = 7 <a href="error.html">sacred scarabs</a> (unchanged)</li>
+            <li>1 hour of <a href="error.html">sphinx riddles</a> = 2 clay tablets (high demand for upcoming festival)</li>
+            <li>Fine linen, cubit length = 4 silver rings (stable)</li>
+            <li>Imported cedar from Lebanon = 12 gold pieces per timber (shortage expected)</li>
+        </ul>
+        
+        <p>The Royal Treasurer has announced new import taxes on luxury goods from Mesopotamia, citing the need to fund the Pharaoh's increasingly elaborate tomb complex. Merchants dealing in exotic spices and precious stones protested outside the palace gates but were quickly dispersed by royal guards.</p>
+        
+        <p>"These taxes will strangle trade like a cobra," complained Senbi the Fat, head of the Merchant Guild. "How are we supposed to sell Persian rugs to nobles if they cost more than a farmer's yearly grain harvest?"</p>
+        
+        <p>Meanwhile, the copper mines to the east report record production under the new overseer, Ptahhotep the Merciless, who has introduced the revolutionary concept of "scheduled water breaks" for slaves.</p>
+
+        <!-- Royal Gossip Section -->
+        <h3>👑 Court Whispers and Royal Rumors</h3>
+        <p>Sources close to the palace report that Princess Nefertiti has been secretly meeting with a <a href="error.html">Libyan prince</a>, causing much consternation among royal advisors who had hoped to secure an alliance with Hittite nobility through marriage.</p>
+        
+        <p>"The Princess was spotted seven times riding her royal barge suspiciously close to the western border," whispered a palace handmaiden who requested anonymity. "And her new headdress clearly shows Libyan influence."</p>
+        
+        <p>The royal astrologer has apparently warned against the union, claiming the stars predict "diplomatic disaster" should the courtship continue. However, the Princess reportedly dismissed these concerns, saying, "The stars have been saying the same tired things for centuries."</p>
+        
+        <p>In related news, the Pharaoh's youngest son has caused another scandal by refusing to participate in the traditional crocodile wrestling ceremony, claiming it's "outdated and unnecessarily dangerous." Royal physicians are reportedly treating the boy for an acute case of common sense, a rare but troubling condition among the nobility.</p>
+
+        <!-- Advertisement 3 -->
+        <div class="advert">
+            📜 <strong>SCRIBE SCHOOL SPECIAL!</strong> Learn to write in just 27 years! 
+            Special discount for children of royal butter churners! 
+            <br><a href="error.html">Enroll your son today!</a>
+        </div>
+
+        <!-- Military News Section -->
+        <h3>𓂧 Defense & Military Affairs 𓂧</h3>
+        <p>General Horemheb the Unstoppable has returned victorious from the southern campaign, bringing with him over three hundred prisoners of war and substantial tribute from conquered territories. The victory parade is scheduled for seven days hence, and all citizens are required to attend and look appropriately impressed.</p>
+        
+        <p>The General's innovative use of chariots equipped with newly designed composite bows overwhelmed enemy forces, who still insist on the outdated practice of fighting on foot with spears.</p>
+        
+        <p>"It's like they haven't even considered the tactical advantage of mobility," General Horemheb told our correspondent while supervising the arrangement of enemy skulls into a decorative pyramid. "Perhaps in three thousand years they'll catch up to our military technology."</p>
+        
+        <p>The royal armory reports the successful testing of a new arrow design featuring improved aerodynamics and ritual enchantments applied by the Temple of Sekhmet. The arrows allegedly "seek the hearts of Egypt's enemies with unerring accuracy," although skeptics note this may just be clever marketing by the arrow-makers guild.</p>
+        
+        <p>In preparation for possible Hittite aggression to the north, the Pharaoh has ordered the construction of seven new border fortresses, each dedicated to a different protective deity. Construction crews are working day and night under the watchful eye of royal overseers, who have been instructed to use "motivational whipping" sparingly and only during daylight hours.</p>
+
+        <div class="map-section">
+            <h3>Newly Discovered Territories</h3>
+            <img src="assets/w3.png" alt="Map of Recent Military Conquests" style="width: 100%; max-width: 500px; border: 2px solid #8B4513;">
+            <p><small>Regions marked in red now pay tribute to the Living God-King</small></p>
+        </div>
+
+        <!-- Lifestyle Section -->
+        <h3>Lifestyle: 10 Plagues Your Housekeeper Should Handle</h3>
+        <p>This week our lifestyle expert Ankhesenamun the Picky shares tips for maintaining your <a href="error.html">mud-brick mansion</a> during locust season:</p>
+        <ol>
+            <li>Always keep spare <a href="error.html">frog repellent</a> in your granary</li>
+            <li>Hire Hebrew slaves with good <a href="error.html">bloodstain removal</a> skills</li>
+            <li>Invest in <a href="error.html">darkness-canceling torches</a></li>
+            <li>Keep firstborn sons in protective bubbles during suspicious astrological alignments</li>
+            <li>Pre-paint your doorway with lamb's blood as a precautionary measure</li>
+            <li>Install boil-resistant furniture covers</li>
+            <li>Use hail-proof roof tiles (available at Imhotep's Home Emporium)</li>
+        </ol>
+        
+        <p>For those experiencing persistent plague problems, Ankhesenamun recommends consulting a priest of Sekhmet rather than wasting money on "miracle cures" sold by traveling Phoenician merchants.</p>
+        
+        <p>"Many so-called plague solutions actually attract more pests," she warns. "That 'sacred' beetle powder from Nubia? Just crushed dung with glitter mixed in. Your cat could make something more effective."</p>
+        
+        <p>This season's trending home decoration includes linen wall hangings in turquoise and gold, strategically placed protection amulets, and at least one decorative mummified ancestor in the formal receiving area.</p>
+
+        <!-- Technology Section -->
+        <h3>𓍯 Innovations of the Age 𓍯</h3>
+        <p>Latest breakthroughs revolutionizing Egyptian life:</p>
+        <ul>
+            <li>New <a href="error.html">shadoof 2.0</a> irrigation system with counterweight improvements</li>
+            <li><a href="error.html">Hieratic script</a> speed-writing courses for busy administrators</li>
+            <li>Portable <a href="error.html">sundial wristbands</a> for the fashion-forward nobleman</li>
+            <li>Improved papyrus processing technique yields 30% smoother writing surface</li>
+            <li>Revolutionary bronze alloy discovered by metalsmith Userhat the Burned</li>
+        </ul>
+        
+        <p>The Royal Innovation Council has awarded this year's Golden Scarab to Nefermaat the Clever for her invention of the folding chair, which she claims came to her in a dream sent by Thoth, god of wisdom.</p>
+        
+        <p>"I was tired of servants having to carry multiple chairs whenever the royal court moved locations," Nefermaat explained during the elaborate seven-hour award ceremony. "With my design, one servant can carry three chairs, leaving the others free to carry more important items, like my collection of ceremonial wigs."</p>
+        
+        <p>Not everyone is embracing new technologies, however. The Scribes Guild has formally protested the introduction of wider reed pens, claiming they make handwriting "sloppy and inelegant" and could lead to "the eventual degradation of all written knowledge."</p>
+
+        <!-- Sports Section -->
+        <h3>𓂀 Mysterious Visitor from the Future 𓂀</h3>
+<p>Startling news from the Temple of Thoth: witnesses report the sudden appearance of a strange man claiming to hail from a distant future era!</p>
+<ol>
+    <li><a href="error.html">High Priests of Thoth</a> are currently interrogating the visitor regarding his unnatural knowledge of the stars and the secret properties of copper and glass.</li>
+    <li>Identified only as <a href="https://era-escape.vercel.app/">Doctor Cyren</a>, he wore shimmering robes and carried an unknown device he called a "chronometer."</li>
+    <li><a href="error.html">Royal Guards</a> were dispatched to secure the area after the visitor allegedly summoned a "holo-map" showing rivers and cities unknown to any Egyptian alive today.</li>
+    <li>Scholars suspect Doctor Cyren may be an emissary of the gods, or a master illusionist from beyond the known lands.</li>
+    <li>Pharaoh's Council has decreed an emergency summit to decide whether to honor or imprison the mysterious traveler.</li>
+</ol>
+
+<p>The populace is divided: some hail him as a prophet sent by Thoth himself, while others whisper he is a harbinger of doom. Meanwhile, Doctor Cyren has requested a laboratory, several scribes, and, inexplicably, a steady supply of pomegranates and honey cakes.</p>
+
+<p>Further updates will follow as scribes document this astonishing development. Some bold voices even speculate that with his aid, Egypt may achieve dominance over all the known world — and worlds beyond.</p>
+
+        <!-- Religion Section -->
+        <h3>𓅓 Temple Affairs & Divine Matters 𓅓</h3>
+        <p>The High Priest of Amun has announced a major renovation of the Great Temple, funded by mysterious "divine contributions" that skeptics suggest bear a striking resemblance to taxes.</p>
+        
+        <p>"The god requires more gold inlay on his sacred barque," declared High Priest Amenemhat the Profound during yesterday's procession. "Also, the deity has expressed divine displeasure with the quality of incense being burned and demands the premium imported variety."</p>
+        
+        <p>In a surprising theological development, the cult of Bastet has seen a surge in popularity among the nobility, with cat mummification services now booked solid for the next three months. The waiting list for premium feline afterlife packages has caused some wealthy families to hide their aging cats from jealous neighbors.</p>
+        
+        <p>"My precious Mittenpaha deserves nothing but the best golden eye inlays and fish-shaped amulets for her journey to the Field of Reeds," said Lady Tiy, while cradling her twenty-seventh ceremonial cat. "I've reserved the mummification service that uses authentic Syrian cedar oil and wrappings imported from the finest Nubian linen makers."</p>
+        
+        <p>Meanwhile, followers of Thoth have petitioned the royal court for additional festival days, arguing that seven holy days per year is insufficient to properly honor the god of wisdom and writing. The Royal Calendar Keeper has yet to respond, reportedly being "too busy calculating optimal planting times based on star positions" to address religious concerns.</p>
+
+        <!-- Education News -->
+        <h3>𓂀 Scribal Schools & Education 𓂀</h3>
+        <p>The Royal Scribe Academy announces this year's graduating class achieved record proficiency in hieratic shorthand, with top student Imhotep the Younger capable of transcribing seven spoken sentences per minute.</p>
+        
+        <p>"We've revolutionized our teaching methods," boasted Headmaster Ptahmose the Stern. "Students now begin reed pen exercises at age four instead of five, giving them that crucial extra year of finger callous development."</p>
+        
+        <p>The curriculum has been expanded to include the revolutionary "New Mathematics," featuring advanced techniques for calculating pyramid volumes and predicting Nile flood levels. Critics argue that such knowledge should remain exclusive to temple priests, warning that "too much education for common children could lead to dangerous questioning of divine order."</p>
+
+        <div class="quote">
+            <p>"A boy's ears are on his back; he listens when he is beaten." - Traditional teaching proverb cited by Academy instructors</p>
+        </div>
+        
+        <p>In related news, the Pharaoh has decreed that daughters of minor nobility may now receive basic literacy training, provided they use it exclusively for managing household inventories and writing appropriately flattering poems about their future husbands.</p>
+
+        <!-- Health Section -->
+        <h3>𓋹 Health & Medicine 𓋹</h3>
+        <p>The Royal Physician Amenemhat has published a groundbreaking medical papyrus detailing new treatments for common ailments, including a surprisingly effective remedy for digestive troubles that combines honey, beer, and precisely seven crushed herbs.</p>
+        
+        <p>"The key breakthrough was recognizing that dosages should vary by patient weight," explained the physician while demonstrating his new bronze surgical tools. "Also, we've discovered that bleeding patients is actually counterproductive in most cases, contrary to traditional practices."</p>
+        
+        <p>The Temple of Sekhmet reports success with their new eye infection treatment, which thankfully contains significantly less pulverized mouse than previous formulations. Patients have responded positively, with one grateful nobleman donating a solid gold cat statue to the temple in thanks for restoring his vision.</p>
+        
+        <p>However, controversy surrounds the new "miracle cure" being promoted by priests of Isis, who claim their sacred water can heal everything from baldness to crocodile bites. Royal medical authorities have issued a warning after several citizens developed suspicious blue rashes after treatment.</p>
+        
+        <p>"Any healing solution that requires one's life savings as an 'offering' should be approached with caution," advised the Royal Physician in a public proclamation. "The gods favor proper medical techniques performed by trained physicians, not expensive miracle waters."</p>
+
+        <!-- Entertainment Section -->
+        <h3>𓀀 Arts & Entertainment 𓀀</h3>
+        <p>The highly anticipated performance by the Theban Orchestra drew record crowds last evening, with their rendition of "Hymn to the Nile" featuring seven new instruments including the innovative water harp.</p>
+        
+        <p>Critics praised composer Mereruka the Melodious for his bold harmonies, though traditionalists complained that modern music "lacks the disciplined simplicity of classic compositions from the Old Kingdom era."</p>
+        
+        <p>The Royal Theater continues its successful run of "Osiris Resurrected," a dramatic retelling of the ancient myth featuring elaborate masks and mechanized stage effects. The production has been particularly noted for its realistic dismemberment scene and the tear-jerking reunion of Isis and Osiris.</p>
+        
+        <p>"I've seen this play seven times already," gushed Lady Nefertari, wiping away tears with an embroidered linen handkerchief. "The actor playing Set is so convincingly evil that children in the audience tried to throw fruit at him during the murder scene."</p>
+        
+        <p>For those seeking lighter entertainment, traveling performers from Crete will present their famous bull-leaping exhibition next week at the Field of Reeds Arena. Tickets are available in exchange for grain or craft goods of appropriate value.</p>
+
+        <!-- Advertisement 4 -->
+        <div class="advert">
+            👑 <strong>ROYAL BEAUTY SECRETS REVEALED!</strong> 
+            Cleopatra's Milk & Honey Bath Salts - Now available for noble ladies!
+            <br><a href="error.html">Visit our perfumery today!</a>
+        </div>
+
+        <!-- Letters to the Editor -->
+        <div class="sidebar">
+            <h3>Letters to the Papyrus</h3>
+            <p><strong>Dear Editor,</strong></p>
+            <p>I am writing to express my outrage at the recent increase in funeral tax rates. As if dying weren't expensive enough already, now my family must pay an additional surcharge for "premium afterlife processing." Is eternal bliss now only for the wealthy?</p>
+            <p><em>— Disgruntled in Dendera</em></p>
+            
+            <p><strong>Dear Editor,</strong></p>
+            <p>The new royal road being constructed through my village is destroying local farmland. When I complained to officials, they suggested I would look good as part of the foundation. Is this the justice our divine Pharaoh promises?</p>
+            <p><em>— Anonymous (for obvious reasons)</em></p>
+            
+            <p><strong>Dear Editor,</strong></p>
+            <p>Seven blessings upon your publication for exposing the scandal of watered-down beer at last month's festival. The brewery responsible has finally admitted their wrongdoing and promised full-strength beverages for future celebrations.</p>
+            <p><em>— Satisfied in Saqqara</em></p>
+        </div>
+
+        <!-- Classifieds Section -->
+        <h3>𓎡 Marketplace & Announcements 𓎡</h3>
+        <p><strong>WANTED:</strong> Experienced tomb painter with own brushes. Must be comfortable with confined spaces and able to work for extended periods by oil lamp light. Previous experience depicting journey to afterlife preferred. Contact the Royal Necropolis Office.</p>
+        
+        <p><strong>FOR SALE:</strong> Slightly used set of canopic jars. Original owner no longer needs them (returned from near-death experience). Perfect condition, never stored actual organs. Reasonable offers considered.</p>
+        
+        <p><strong>MISSING:</strong> Prize ibis bird, answers to "Thothy." Sacred to household, white feathers with distinctive black neck. Reward of 7 copper pieces for safe return.</p>
+        
+        <p><strong>SERVICES:</strong> Professional pyramid alignment by former royal astronomer. Ensure your eternal resting place properly aligns with celestial bodies for optimal afterlife journey. Satisfaction guaranteed or your mummy refunded.</p>
+        
+        <p><strong>ANNOUNCEMENT:</strong> The annual "Run From Ammit" charity race will take place next week. Proceeds benefit families of workers crushed during recent pyramid construction. Sign up at any temple of Anubis.</p>
+
+        <!-- Astronomy Section -->
+        <h3>𓇼 Celestial Observations 𓇼</h3>
+        <p>Royal astronomers report unusual stellar activity in the northern sky, with the appearance of a "wandering star" that seems to move contrary to established celestial patterns.</p>
+        
+        <p>"We've been observing this anomaly for seven consecutive nights," said Chief Astronomer Senenmut the Stargazer. "According to ancient texts, such phenomena often precede significant events in the kingdom."</p>
+        
+        <p>The priests of Thoth have interpreted the stellar movement as a favorable omen for the Pharaoh's military campaigns, though the cult of Isis offers a contradictory reading involving imminent agricultural prosperity.</p>
+        
+        <p>Meanwhile, calculations for the upcoming solar temple alignment continue apace, with architects working day and night to ensure that the first rays of the solstice sun will illuminate the sacred inner chamber exactly as designed.</p>
+        
+        <p>"If we're off by even a fraction of a degree, the light won't hit the statue of Ra properly," explained project supervisor Khnumhotep the Precise. "And no one wants to explain to the Living God-King why his expensive temple doesn't work as promised."</p>
+
+        <!-- Secret Message Section -->
+        <div class="secret">
+            <p><em>Correspondent: Thothmes R. Cuneiform</em></p>
