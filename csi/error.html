@@ -17,19 +17,19 @@
       align-items: center;
       text-align: center;
     }
-
+  
     h1 {
       font-size: 80px;
       margin: 20px 0 10px 0;
       text-shadow: 2px 2px #e0c097;
     }
-
+  
     p {
       font-size: 28px;
       margin: 10px 0 30px 0;
       color: #7b5e45;
     }
-
+  
     .btn-home {
       margin-top: 20px;
       padding: 15px 30px;
@@ -42,31 +42,55 @@
       text-decoration: none;
       transition: background-color 0.3s;
     }
-
+  
     .btn-home:hover {
       background-color: #d4b07a;
     }
+  
+    #countdown {
+      font-size: 120px; /* BIGGER Countdown */
+      text-shadow: 2px 2px #e0c097;
+    }
   </style>
+  
 
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
   <script>
-    // 3 seconds (3000 milliseconds) delay before showing the 404 content
     document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() {
-        document.body.style.display = 'flex';
-      }, 3000);
+      var countdownElement = document.getElementById('countdown');
+      var mainContent = document.getElementById('main-content');
+      var count = 3;
+
+      countdownElement.textContent = count;
+
+      var countdownInterval = setInterval(function() {
+        count--;
+        if (count > 0) {
+          countdownElement.textContent = count;
+        } else {
+          clearInterval(countdownInterval);
+          countdownElement.style.display = 'none';
+          mainContent.style.display = 'flex';
+        }
+      }, 1000);
     });
   </script>
 
 </head>
 
-<body style="display: none;"> <!-- initially hidden -->
+<body>
 
-  <h1>Error 404 - Not Found</h1>
-  <p>You are closer to the answer...</p>
+  <div id="countdown"></div>
 
-  <a class="btn-home" href="index.html">Return to Main Page</a>
+  <div id="main-content" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+
+    <h1>Error 404 - Not Found</h1>
+    <p>You are closer to the answer...</p>
+
+    <a class="btn-home" href="index.html">Return to Main Page</a>
+
+  </div>
 
 </body>
 </html>
